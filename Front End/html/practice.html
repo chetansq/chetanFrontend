@@ -5,10 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
+    <style>
+        form {
+            border: 4px solid black;
+            border-radius: 20px;
+            border-style:double;
+            text-align: center;
+        }
+        hr{
+            border-color: black;
+            
+            color: black;
+
+        }
+        h1{
+            background-color: skyblue;
+        }
+
+    </style>
 </head>
 
 <body>
     <form action="form.html">
+        <h1>REGISTRATION FROM </h1>
+        <hr>
         <h4>First name : </h4>
         <input type="text" placeholder="Enter First Name" required />
         <h4>Last name : </h4>
@@ -28,8 +48,12 @@
         <label for="female">female</label>
         <input type="radio" name="Gender" value="other" required />
         <label for="other">other</label>
+        <br>
+        <br>
         <input type="submit">
         <input type="reset">
+        <br>
+        <br>
     </form>
 </body>
 
