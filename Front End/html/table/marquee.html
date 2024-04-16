@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        form {
+            border: 4px solid black;
+            border-radius: 20px;
+            border-style: double;
+            text-align: center;
+            background-color: rgb(168, 209, 211);
+        }
+
+        hr {
+            border-color: black;
+
+            color: rgb(0, 0, 0);
+
+        }
+
+        h1 {
+            background-color: rgb(58, 147, 182);
+            color: rgb(12, 37, 59);
+        }
+
+        .c1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="form.html">
+        <h1>REGISTRATION FROM </h1>
+        <hr>
+        <h4>* First name : </h4>
+        <input type="text" placeholder="Enter First Name" required />
+
+        <h4>Last name : </h4>
+        <input type="text" placeholder="Enter Last Name (optional)" />
+
+        <h4>* Email : </h4>
+        <input type="email" placeholder="Email address" required />
+        
+        <h4>* Password : </h4>
+        <input type="password" name="password" placeholder="Password">
+        
+        <h5>* Confirm Password : </h5>
+        <input type="password" name="cpassword" placeholder="Confirm Password">
+            <h4>* Language (As You Know) : </h4>
+        <input type="checkbox" />Gujarati
+        <input type="checkbox" />Hindi
+        <input type="checkbox" />English
+        <br>
+        <h4>* Gender : </h4>
+
+        <input type="radio" name="Gender" value="male" required />
+        <label for="male">male</label>
+        <input type="radio" name="Gender" value="female" required />
+        <label for="female">female</label>
+        <input type="radio" name="Gender" value="other" required />
+        <label for="other">other</label>
+        <br>
+        <br>
+        <h4>* Select City :
+            <select name="city" required>
+                <option value="none">--none--</option>
+                <option value="surat">Surat</option>
+                <option value="Ahemadabad">Ahemadabad</option>
+                <option value="Bhavnagar">Bhavnagar</option>
+                <option value="Baroda">Baroda</option>
+                <option value="Rajkot">Rajkot</option>
+            </select>
+        </h4>
+        <br>
+        <br>
+        <input type="submit">
+        <input type="reset">
+        <br>
+        <br>
+        <hr>
+        <marquee>
+            <p class="c1">* Please Fill Out All Field In Registration Form But Optional Field is not Require *</p>
+        </marquee>
+
+    </form>
+
+</body>
+
+</html>
