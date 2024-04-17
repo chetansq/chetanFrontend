@@ -35,7 +35,7 @@
 <body>
     <!-- Form Section -->
 
-    <form action="form.html">
+    <form action="complete.html">
         <h1>REGISTRATION FROM </h1>
         <hr>
         <table>
@@ -79,8 +79,7 @@
                     </label>
 
                 </td>
-                <td><input type="number" id="phonenumber" name="phonenumber" placeholder="104xxxxxxx"
-                        max="10" />
+                <td><input type="number" id="phonenumber" name="phonenumber" placeholder="104xxxxxxx"  />
                 </td>
             </tr>
 
@@ -162,17 +161,36 @@
                     </select></td>
             </tr>
 
-
-
-
+            <!-- Department -->
 
             <tr>
                 <td>
-                    <h4>* Language (As You Know) : </h4>
+                    <h4>* Department : </h4>
+
+
                 </td>
-                <td><input type="checkbox" />Gujarati
-                    <input type="checkbox" />Hindi
-                    <input type="checkbox" />English
+                <td><label for="cse">CSE</label>
+                    <input type="radio" name="Department" id="cse" value="cse" required />
+                    <label for="eee">EEE</label>
+                    <input type="radio" name="Department" id="eee" value="eee" required />
+                    <label for="bba">BBA</label>
+                    <input type="radio" name="Department" id="bba" value="bba" required />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Course">
+                        <h4>*Course : </h4>
+                    </label>
+
+                </td>
+                <td><input type="checkbox" />C
+                    <input type="checkbox" />C++
+                    <input type="checkbox" />Java
+                    <input type="checkbox" />AI
+                    <input type="checkbox" />Machine Learning
+                    <input type="checkbox" />Robotics
                 </td>
             </tr>
 
@@ -180,16 +198,12 @@
 
             <tr>
                 <td>
-                    <h4>* Select City : </h4>
+                    <label for="Photo">
+                        <h4>* Photo: </h4>
+                    </label>
+
                 </td>
-                <td> <select name="city" required>
-                        <option value="none">--none--</option>
-                        <option value="surat">Surat</option>
-                        <option value="Ahemadabad">Ahemadabad</option>
-                        <option value="Bhavnagar">Bhavnagar</option>
-                        <option value="Baroda">Baroda</option>
-                        <option value="Rajkot">Rajkot</option>
-                    </select></td>
+                <td> <input type="file" name="file" id="photo"></td>
             </tr>
 
             <tr>
