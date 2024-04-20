@@ -10,8 +10,16 @@
             border: 4px solid black;
             border-radius: 20px;
             border-style: double;
-            /* text-align: center; */
             background-color: rgb(168, 209, 211);
+
+
+        }
+
+        table {
+            position: relative;
+            /* left: 550px; */
+            border: 2px solid;
+            margin-left: 30%;
         }
 
         hr {
@@ -24,10 +32,35 @@
         h1 {
             background-color: rgb(58, 147, 182);
             color: rgb(12, 37, 59);
+            text-align: center;
         }
 
         .c1 {
             color: red;
+        }
+
+        td {
+            padding-left: 20px;
+        }
+
+        #s1 {
+            background-color: rgb(51, 134, 51);
+            color: white;
+        }
+
+        #s2 {
+            background-color: rgb(224, 55, 55);
+            color: white;
+        }
+
+        #s1:hover {
+            color: rgb(0, 0, 0);
+            background-color: white;
+        }
+
+        #s2:hover {
+            color: rgb(0, 0, 0);
+            background-color: white;
         }
     </style>
 </head>
@@ -36,7 +69,7 @@
     <!-- Form Section -->
 
     <form action="complete.html">
-        <h1>REGISTRATION FROM </h1>
+        <h1>STUDENT REGISTRATION FROM </h1>
         <hr>
         <table>
 
@@ -79,7 +112,7 @@
                     </label>
 
                 </td>
-                <td><input type="number" id="phonenumber" name="phonenumber" placeholder="104xxxxxxx"  />
+                <td><input type="number" id="phonenumber" name="phonenumber" placeholder="104xxxxxxx" />
                 </td>
             </tr>
 
@@ -87,7 +120,7 @@
 
             <tr>
                 <td><label for="email">
-                        <h4>* Email : </h4>
+                        <h4>Email : </h4>
                     </label>
 
                 </td>
@@ -98,14 +131,15 @@
 
             <tr>
                 <td>
-                    <h4>* Gender : </h4>
+                    <h4>Gender : </h4>
                 </td>
-                <td><label for="male">male</label>
+                <td>
                     <input type="radio" name="Gender" id="male" value="male" required />
-                    <label for="female">female</label>
+                    <label for="male">male</label>
                     <input type="radio" name="Gender" id="female" value="female" required />
-                    <label for="other">other</label>
+                    <label for="female">female</label>
                     <input type="radio" name="Gender" id="other" value="other" required />
+                    <label for="other">other</label>
                 </td>
             </tr>
 
@@ -114,7 +148,7 @@
             <tr>
                 <td>
                     <label for="datebirth">
-                        <h4>* Date of Birth: </h4>
+                        <h4>Date of Birth: </h4>
                     </label>
 
                 </td>
@@ -128,7 +162,7 @@
             <tr>
                 <td>
                     <label for="address">
-                        <h4>* Address: </h4>
+                        <h4>Address: </h4>
                     </label>
 
                 </td>
@@ -142,7 +176,7 @@
             <tr>
                 <td>
                     <label for="blood">
-                        <h4>* Blood Group : </h4>
+                        <h4>Blood Group : </h4>
                     </label>
 
                 </td>
@@ -165,7 +199,7 @@
 
             <tr>
                 <td>
-                    <h4>* Department : </h4>
+                    <h4>Department : </h4>
 
 
                 </td>
@@ -178,10 +212,12 @@
                 </td>
             </tr>
 
+            <!-- Course -->
+
             <tr>
                 <td>
                     <label for="Course">
-                        <h4>*Course : </h4>
+                        <h4>Course : </h4>
                     </label>
 
                 </td>
@@ -199,7 +235,7 @@
             <tr>
                 <td>
                     <label for="Photo">
-                        <h4>* Photo: </h4>
+                        <h4>Photo: </h4>
                     </label>
 
                 </td>
@@ -207,10 +243,16 @@
             </tr>
 
             <tr>
-                <td><input type="submit"> <input type="reset"></td>
+                <td><input type="submit" id="s1"> <input type="reset" id="s2"></td>
 
             </tr>
         </table>
+        <aside>
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/RClkM7gaxYk?si=gqjnhSKENW2TkED1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </aside>
 
         <!-- <h5>* Confirm Password : </h5>
         <input type="password" name="cpassword" placeholder="Confirm Password"> -->
@@ -228,6 +270,7 @@
         </marquee>
 
     </form>
+
 
 </body>
 
