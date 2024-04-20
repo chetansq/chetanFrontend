@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        table {
+
+            border: 2px solid;
+            margin-left: 30%;
+        }
+
+        body {
+            background-image: url(./image/photo-1624521793559-136bfe16fc86.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -140px;
+
+            width: 100%;
+        }
+
+        form {
+            margin: 290px 10px 0px 149px;
+        }
+
+        td {
+            padding-left: 20px;
+        }
+
+        #s1 {
+            background-color: rgb(51, 134, 51);
+            color: white;
+        }
+
+        #s2 {
+            background-color: rgb(224, 55, 55);
+            color: white;
+        }
+
+        #s1:hover {
+            color: rgb(0, 0, 0);
+            background-color: white;
+        }
+
+        #s2:hover {
+            color: rgb(0, 0, 0);
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="nav.html">
+        <table>
+
+            <!-- Name -->
+
+            <tr>
+                <td> <label for="Name">
+                        <h4>Name : </h4>
+                    </label></td>
+                <td> <input type="text" id="Name" name="Name" placeholder="Enter Your Name" required /></td>
+            </tr>
+
+            <!-- Phone Number -->
+
+            <tr>
+                <td><label for="phonenumber">
+                        <h4>Phone Number : </h4>
+                    </label>
+
+                </td>
+                <td><input type="number" id="phonenumber" name="phonenumber" placeholder="104xxxxxxx" />
+                </td>
+            </tr>
+
+            <!-- Email -->
+
+            <tr>
+                <td><label for="email">
+                        <h4>Email : </h4>
+                    </label>
+
+                </td>
+                <td> <input type="email" id="email" name="email" placeholder="email@gmail.com" required /></td>
+            </tr>
+
+            <!-- password -->
+            <tr>
+                <td>
+                    <h4>* Password : </h4>
+                </td>
+                <td>
+                    <input type="password" name="password" placeholder="Password" />
+                </td>
+            </tr>
+
+            <!-- comfirm password -->
+            <tr>
+                <td>
+                    <label for="passwor">
+                        <h5>Confirm Password : </h5>
+                    </label>
+                </td>
+                <td>
+
+                    <input type="password" name="cpassword" placeholder="Confirm Password" />
+                </td>
+            </tr>
+
+            <!-- Gender-->
+
+            <tr>
+                <td>
+                    <h4>Gender : </h4>
+                </td>
+                <td>
+                    <input type="radio" name="Gender" id="male" value="male" required />
+                    <label for="male">male</label>
+                    <input type="radio" name="Gender" id="female" value="female" required />
+                    <label for="female">female</label>
+                    <input type="radio" name="Gender" id="other" value="other" required />
+                    <label for="other">other</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" id="s1"> <input type="reset" id="s2" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
