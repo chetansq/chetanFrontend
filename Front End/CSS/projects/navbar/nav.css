@@ -6,15 +6,28 @@
 #head {
     background-color: black;
     height: 60px;
+    display: block;
 }
 
 #amazon {
     padding: 5px;
-    padding-right: 700px;
-    color: orange;
-    font-size: 20px;
+
+    color: rgb(218, 152, 29);
+    font-size: 25px;
+    margin: 10px;
+    margin-top: 20px;
     text-decoration: none;
 
+}
+
+#amazon:hover {
+    border: 2px solid white;
+}
+
+#space {
+    padding-right: 700px;
+    text-decoration: none;
+    
 }
 
 a {
@@ -28,6 +41,6 @@ a {
     padding: 4px;
 }
 
-img{
+img {
     width: 100%;
 }

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Request</title>
+    <style>
+        form {
+            border: 3px solid rgb(0, 4, 255);
+            box-shadow: 0px 0px 30px black;
+            overflow: auto;
+        }
+
+        legend {
+            color: blue;
+        }
+
+        div {
+            margin: 20px;
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        span {
+            color: red;
+        }
+
+        #submit {
+            padding: 0px 20px 0px 20px;
+
+        }
+
+        #reset {
+
+            padding: 0px 60px 0px 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <div>
+            <h1>Reservation Request</h1>
+        </div>
+        <div>
+            <fieldset>
+
+                <legend>General Information</legend>
+                <table>
+                    <tr>
+                        <td><label for="Arrival_date">
+                                Arrival Date:
+                            </label>
+                        </td>
+                        <td><input type="datetime" id="Arrival_date" placeholder="dd-mm-yyyyy" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="night">
+                                Nights:
+                            </label>
+                        </td>
+                        <td><input type="number" id="nights" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="Adult">
+                                Adults:
+                            </label>
+                        </td>
+                        <td><input type="number" id="Adult"  required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="children">
+                                children:
+                            </label>
+                        </td>
+                        <td><input type="number" id="children" required></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Preferences</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Room type:</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="roomtype" id="Standard">
+                            <label for="Standard">Standard</label>
+
+                            <input type="radio" name="roomtype" id="Business">
+                            <label for="Business">Business</label>
+
+                            <input type="radio" name="roomtype" id="Suite">
+                            <label for="Suite">Suite</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Bed type:</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bedtype" id="King">
+                            <label for="King">King</label>
+
+                            <input type="radio" name="bedtype" id="Double">
+                            <label for="Double">Double </label>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="smoke" id="smoking">
+                            <label for="smoking">Smoking</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" name="name" required> <span>Name is required</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" name="email" required> <span>email address is invalid.</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone:</label></td>
+                        <td><input type="number" name="phone" required> <span>Phone number is invalid.</span></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+        <div>
+            <input type="Submit" value="Submit Reservation" id="submit">
+            <input type="reset" value="Clear" id="reset">
+        </div>
+    </form>
+
+</body>
+
+</html>
