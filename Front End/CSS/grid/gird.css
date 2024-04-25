@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100dvh;
+    display: grid;
+    background-color: rgb(143, 143, 204);
+ 
+
+   grid-template-areas: "header header header header"
+   "slidbar slidbar content1 content1"
+   "slidbar slidbar content2 content3"
+   "footer footer footer footer";
+
+
+}
+.item{ 
+   
+    background-color: rgb(109, 199, 199);
+    border: 2px solid black;
+
+}
+
+
+
+
+.header{
+grid-area:header;
+}
+.slidbar{
+    grid-area: slidbar;
+}
+.content1{
+    grid-area: content1;
+}
+.content2{
+    grid-area: content2;
+}
+
+.footer{
+    grid-area: footer;
+}
