@@ -9,13 +9,13 @@
     height: 100%;
     background-color: rgb(228, 120, 120);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(515px, 515px));
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 300px)); */
+    /* grid-template-columns: repeat(3,1fr); */
     padding: 10px;
     justify-content: center;
     row-gap: 20px;
     column-gap: 20px;
     overflow: hidden;
-
 
 }
 
@@ -42,5 +42,5 @@ body {
 
 .item {
     border: solid 2px black;
-    height: 500px;
+    height: 300px;
 }
