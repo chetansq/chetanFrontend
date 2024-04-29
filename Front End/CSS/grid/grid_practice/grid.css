@@ -8,11 +8,14 @@
     width: 80%;
     height: 100%;
     background-color: rgb(228, 120, 120);
-    display: grid;
+    /* display: grid; */
+    display: flex;
+
     /* grid-template-columns: repeat(auto-fit, minmax(300px, 300px)); */
     /* grid-template-columns: repeat(3,1fr); */
     padding: 10px;
     justify-content: center;
+    justify-content: space-around;
     row-gap: 20px;
     column-gap: 20px;
     overflow: hidden;
