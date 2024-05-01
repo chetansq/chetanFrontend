@@ -1,29 +1,119 @@
+/* @import url('grid.css'); */
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .container {
-    /* margin: auto auto; */
+
     height: 100%;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
 }
 
 .item {
     padding: 5px;
-    height: 330px;
+    height: auto;
     width: 250px;
     border: 2px solid;
-    border-color:black
+    border-color: black;
+    margin: 20px;
+    padding: 20px;
+
+    /* transition */
+    transition: all 0.5s 0s ease;
+
 }
 
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    margin: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 40px 10px 40px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+/* twitter */
+.twitter:hover {
+    color: white;
+    background-color: rgb(97, 97, 248);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.twitter button:hover {
+    color: rgb(53, 50, 224);
+    background-color: rgb(230, 230, 240);
+}
+
+/* instagram */
+.instagram:hover {
+    color: white;
+    background-color: rgb(238, 132, 71);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.instagram button:hover {
+    color: rgb(238, 95, 51);
+    background-color: rgb(230, 230, 240);
+}
+
+/* youtube */
+.youtube:hover {
+    color: white;
+    background-color: rgb(223, 65, 65);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.youtube button:hover {
+    color: rgb(238, 59, 59);
+    background-color: rgb(230, 230, 240);
+
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
