@@ -33,7 +33,7 @@ body {
     border-color: black;
     margin: 20px;
     padding: 20px;
-
+border-radius: 20px;
     /* transition */
     transition: all 0.5s 0s ease;
 
@@ -50,6 +50,7 @@ body {
 img {
     height: 50px;
     width: 50px;
+    
 }
 
 h1 {
@@ -57,6 +58,10 @@ h1 {
     text-align: center;
 }
 
+/* .item :hover::after{
+    content: "my name is chetan";
+    background-color: pink;
+} */
 p {
     text-align: justify;
     margin: 20px;
