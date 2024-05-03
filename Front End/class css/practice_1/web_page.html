@@ -4,29 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding</title>
-    <link rel="stylesheet" href="web.css">
+    <title>Login page</title>
+    <link rel="stylesheet" href="./web.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="heading">
-            <h1>Coding Help</h1>
-            <a href="">
-                <h3>Home</h3>
-            </a>
-            <a href="">
-                <h3>About Us</h3>
-            </a>
-            <a href="">
-                <h3>Service</h3>
-            </a>
-            <a href="">
-                <h3>Portfolio</h3>
-            </a>
-            <a href="">
-                <h3>Contact Us</h3>
-            </a>
+        <div class="login">
+
+
+            <div class="form">
+                <h1>Login</h1>
+                <hr>
+                <label for="email"> Email</label>
+                <input type="email" placeholder="Email@gmail.com" id="email" required />
+
+                <label for="pwd"> Password</label>
+                <input type="password" placeholder="********" id="pwd" required />
+               
+                <div class="checkbox">
+
+                    <input type="checkbox" id="remember" >
+                    <label for="remember"> Remember</label>
+                </div>
+                <button>Login</button>
+            </div>
+        </div>
+        <div class="vector">
+            <img src="./image/730_generated-removebg-preview.png" alt="vector image">
         </div>
     </div>
 </body>
