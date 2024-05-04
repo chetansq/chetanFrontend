@@ -33,7 +33,7 @@ body {
     border-color: black;
     margin: 20px;
     padding: 20px;
-border-radius: 20px;
+    border-radius: 20px;
     /* transition */
     transition: all 0.5s 0s ease;
 
@@ -50,7 +50,7 @@ border-radius: 20px;
 img {
     height: 50px;
     width: 50px;
-    
+
 }
 
 h1 {
