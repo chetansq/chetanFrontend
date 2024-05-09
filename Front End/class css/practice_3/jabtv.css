@@ -8,8 +8,6 @@
 .container {
     height: 100vh;
     width: 100vw;
-
-    /* background-color: rosybrown; */
     padding: 5px;
 }
 
@@ -29,6 +27,11 @@
 a {
     text-decoration: none;
     color: blue;
+
+    &:hover {
+
+        color: red;
+    }
 }
 
 .heading h1 {
@@ -84,18 +87,35 @@ input {
     color: blue;
 }
 
-.paragraph button:nth-child(5) {
+.paragraph button:nth-child(6) {
     background-color: red;
     color: white;
+
+    &:hover {
+        background-color: white;
+        color: red;
+    }
 }
 
-.paragraph button:nth-child(6) {
+.paragraph button:nth-child(7) {
     background-color: blue;
     color: white;
+
+    &:hover {
+        background-color: white;
+        color: blue;
+    }
 }
+
+
 
 .image {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    padding: 10px 5px;
+    border-radius: 5px;
 }
