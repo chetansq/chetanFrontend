@@ -3,3 +3,14 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.header {
+    @include flex(space-between);
+    height: 100px;
+}
