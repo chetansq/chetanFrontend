@@ -11,6 +11,17 @@
 }
 
 .header {
-    @include flex(space-between);
+    @include flex(space-between, center);
     height: 100px;
+    padding: 10px;
+
+    .list {
+        @include flex(space-between, center);
+        width: 50%;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
 }
