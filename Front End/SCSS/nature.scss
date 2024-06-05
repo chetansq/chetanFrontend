@@ -10,18 +10,86 @@
     align-items: $align;
 }
 
-.header {
-    @include flex(space-between, center);
-    height: 100px;
-    padding: 10px;
 
-    .list {
-        @include flex(space-between, center);
-        width: 50%;
+header {
+
+    background-color: rgba(0, 0, 0, 1);
+
+    // position:absolute;
+    .lang {
+        display: flex;
+        justify-content: right;
+        gap: 10px;
+        height: 15px;
+
     }
 
-    a {
-        color: black;
-        text-decoration: none;
+    .main_header {
+
+        // logo section started here
+        .logo {
+            font-size: xx-large;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                box-shadow: 0px 0px 3px 4px white;
+                padding: 1px;
+                object-fit: cover;
+            }
+        }
+        // logo secticon
+
+
+        // nav section started 
+        nav {
+            @include flex(space-between, center);
+            height: calc(100px - 15px);
+            padding: 10px;
+
+
+
+            .list {
+                @include flex(space-between, center);
+                width: 50%;
+            }
+
+            a {
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+            }
+        }
+        // nav section ended 
+
+        // header buttons 
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+
+            // gap: 20px;
+
+                a {
+                    padding: 0.5rem 1rem;
+                    background-color: green;
+                }
+        }
+        // header buttons ended 
     }
+}
+
+.main {
+    background-image: url('./project/assets/nature_green_maple_leaves_tree_branches_dark_background_bokeh_forest_4k_hd_dark_background-3840x2160.jpg');
+    // background-image: url('./project/assets/thumb-1920-1323467.png');
+    height: calc(100vh - 100px);
+    background-size: cover;
+    color: white;
+
 }
