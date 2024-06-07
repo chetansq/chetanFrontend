@@ -4,16 +4,19 @@
     box-sizing: border-box;
 }
 
-@mixin flex($justify, $align) {
+@mixin flex($--justify, $--align) {
     display: flex;
-    justify-content: $justify;
-    align-items: $align;
+    justify-content: $--justify;
+    align-items: $--align;
 }
 
 
 header {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    padding: 10px;
+    width: 100%;
 
-    background-color: rgba(0, 0, 0, 1);
 
     // position:absolute;
     .lang {
@@ -21,10 +24,14 @@ header {
         justify-content: right;
         gap: 10px;
         height: 15px;
-
+        color: white;
     }
 
     .main_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
 
         // logo section started here
         .logo {
@@ -35,6 +42,10 @@ header {
             align-items: center;
             gap: 10px;
 
+            p {
+                color: white;
+            }
+
             img {
                 height: 50px;
                 width: 50px;
@@ -44,27 +55,25 @@ header {
                 object-fit: cover;
             }
         }
+
         // logo secticon
 
 
         // nav section started 
+
+
+
         nav {
             @include flex(space-between, center);
-            height: calc(100px - 15px);
-            padding: 10px;
-
-
-
-            .list {
-                @include flex(space-between, center);
-                width: 50%;
-            }
-
-            a {
-                color: rgb(255, 255, 255);
-                text-decoration: none;
-            }
+            width: 50%;
         }
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+
         // nav section ended 
 
         // header buttons 
@@ -76,20 +85,25 @@ header {
 
             // gap: 20px;
 
-                a {
-                    padding: 0.5rem 1rem;
-                    background-color: green;
-                }
+            a {
+                padding: 0.5rem 2rem;
+                background-color: green;
+            }
         }
+
         // header buttons ended 
     }
 }
 
-.main {
+main {
     background-image: url('./project/assets/nature_green_maple_leaves_tree_branches_dark_background_bokeh_forest_4k_hd_dark_background-3840x2160.jpg');
-    // background-image: url('./project/assets/thumb-1920-1323467.png');
-    height: calc(100vh - 100px);
+
+    @include flex(center, center);
+    height: 100vh;
     background-size: cover;
     color: white;
+    p:nth-child(1){
+        font-size: x-large  ;
+    }
 
 }
